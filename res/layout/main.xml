@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView 
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content" 
+	   android:text="Amount :" />
+	 <EditText
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:inputType="number"
+       android:singleLine="true"
+       android:id="@+id/input_montant"
+       android:layout_marginBottom="10dp"
+       android:textColor="#000"
+       android:layout_margin="5dp"
+      />
+      <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:text="To :" />
+		<Spinner 
+	   android:id="@+id/spinner_from" 
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content" 
+	   android:drawSelectorOnTop="true" />
+	   <TextView 
+	   android:layout_width="fill_parent"
+       android:layout_height="wrap_content" 
+       android:text="From:" />
+	<Spinner 
+	   android:id="@+id/spinner_to" 
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content" 
+	   android:drawSelectorOnTop="true" />
+	   <Button
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/btn_convertir"
+	/>
+	<TextView 
+	   android:layout_width="fill_parent"
+       android:layout_height="wrap_content" 
+       android:textSize="20dp"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:padding="10dp"
+       android:id="@+id/resultat"/>
+</LinearLayout>
